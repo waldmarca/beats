@@ -64,11 +64,11 @@
 
 .order-section {
   color: #fff;
-  background: url('../../img/decor/delivery-bg.png') center center / 100% 100% no-repeat;
+  background: url('../img/decor/delivery-bg.png') center center / 100% 100% no-repeat;
   position: relative;
 
   &::before {
-    content: url('../../img/decor/pentagon.png');
+    content: url('../img/decor/pentagon.png');
     position: absolute;
     top: -22px;
     right: 26%;

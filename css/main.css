@@ -108,7 +108,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 65px;
-  background: url("../../img/headphones.png") right center/55% auto no-repeat;
+  background: url("../img/headphones.png") right center/55% auto no-repeat;
 }
 
 .hero__title-section {
@@ -301,11 +301,11 @@ img {
 
 .order-section {
   color: #fff;
-  background: url("../../img/decor/delivery-bg.png") center center/100% 100% no-repeat;
+  background: url("../img/decor/delivery-bg.png") center center/100% 100% no-repeat;
   position: relative;
 }
 .order-section::before {
-  content: url("../../img/decor/pentagon.png");
+  content: url("../img/decor/pentagon.png");
   position: absolute;
   top: -22px;
   right: 26%;
@@ -329,7 +329,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/decor/combined-shape.png");
+  content: url("../img/decor/combined-shape.png");
   position: absolute;
   top: 45px;
   right: 0;
@@ -562,7 +562,7 @@ img {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../img/icons/checked.png") center center no-repeat;
+  background: url("../img/icons/checked.png") center center no-repeat;
 }
 
 .radio__elem {
