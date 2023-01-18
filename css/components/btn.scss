@@ -1,0 +1,26 @@
+.btn {
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 18px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background: $red;
+  color: #fff;
+  border: none;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background: #CA1B36;
+    color: #FFFFFF;
+  }
+
+  &--theme-transparent {
+    background: transparent;
+    text-transform: none;
+
+    &:hover {
+      color: $red;
+      background: transparent;
+    }
+  }
+}

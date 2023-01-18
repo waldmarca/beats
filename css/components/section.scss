@@ -1,0 +1,80 @@
+.section {
+  height: 100vh;
+  min-height: 652px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 53px;
+  text-align: center;
+}
+
+.benefits-section {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 17px;
+    border-left-width: 17px;
+    border-bottom: 35px solid $red;
+    left: 24%;
+    bottom: 0;
+    transform: rotate(225deg);
+  }
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 18px;
+}
+
+.headline__subtitle {
+  color: #666;
+  padding: 0 18%;
+  margin-bottom: 62px;
+}
+
+.reviews-section {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #868686;
+    bottom: -20px;
+    left: 26%;
+  }
+}
+
+.order-section {
+  color: #fff;
+  background: url('../../img/decor/delivery-bg.png') center center / 100% 100% no-repeat;
+  position: relative;
+
+  &::before {
+    content: url('../../img/decor/pentagon.png');
+    position: absolute;
+    top: -22px;
+    right: 26%;
+  }
+}
+
+.order-section__container {
+  width: 935px;
+}
