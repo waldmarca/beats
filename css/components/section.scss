@@ -1,18 +1,23 @@
 .section {
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section__title {
-  font-size: 48px;
-  line-height: 52px;
+  font-size: rem(48px);
+  line-height: rem(52px);
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 53px;
+  margin-bottom: rem(53px);
   text-align: center;
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
+  }
 }
 
 .benefits-section {
@@ -24,12 +29,22 @@
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-right-width: 17px;
-    border-left-width: 17px;
-    border-bottom: 35px solid $red;
+    border-right-width: rem(17px);
+    border-left-width: rem(17px);
+    border-bottom: rem(35px) solid $red;
     left: 24%;
-    bottom: 0;
+    bottom: -2%;
     transform: rotate(225deg);
+
+    @include tablets {
+      left: 4%;
+    }
+  }
+}
+
+.benefits-section__container {
+  @include tablets {
+  width: 100%;
   }
 }
 
@@ -38,13 +53,21 @@
 }
 
 .headline__title {
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 
 .headline__subtitle {
   color: #666;
   padding: 0 18%;
-  margin-bottom: 62px;
+  margin-bottom: rem(62px);
+
+  @include tablets {
+    padding: 0 10%;
+
+    @include phones {
+      padding: 0 7%;
+    }
+  }
 }
 
 .reviews-section {
@@ -53,12 +76,12 @@
   &::before {
     content: '';
     position: absolute;
-    width: 35px;
-    height: 35px;
+    width: rem(35px);
+    height: rem(35px);
     border-radius: 50%;
     background: #868686;
-    bottom: -20px;
-    left: 26%;
+    bottom: rem(-20px);
+    left: 8%;
   }
 }
 
@@ -68,13 +91,18 @@
   position: relative;
 
   &::before {
-    content: url('../img/decor/pentagon.png');
+    content: url('../img/decor/polygon.svg');
     position: absolute;
-    top: -22px;
-    right: 26%;
+    top: rem(-22px);
+    right: 8%;
   }
 }
 
 .order-section__container {
-  width: 935px;
+  width: 95%;
+  max-width: 935px;
+}
+
+.map-section {
+  background: url('../img/map.jpg') center center / cover no-repeat;
 }

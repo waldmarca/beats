@@ -1,15 +1,19 @@
 $containerWidth: 915px;
 $baseFontSize: 16px;
 
+$tablets: 768px;
+$phones: 480px;
+
 $red: #E01F3D;
 
 $z-fixed-menu: 100;
+
+@import "media";
 
 @import url('./normalize.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
 @import "layout";
-
 
 @import "components/hero.scss";
 @import "components/header.scss";
@@ -20,3 +24,6 @@ $z-fixed-menu: 100;
 @import "components/interactive-avatar.scss";
 @import "components/form.scss";
 @import "components/fixed-menu.scss";
+@import "components/hamburger.scss";
+@import "components/footer.scss";
+
