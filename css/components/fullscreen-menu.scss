@@ -1,0 +1,51 @@
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background: #2e3336;
+  z-index: 1000;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.fullscreen-menu__exit {
+    display: block;
+    position: absolute;
+    top: rem(25px);
+    right: rem(25px);
+
+    &-img {
+      width: rem(18px);
+      height: rem(18px);
+    }
+}
+
+
+.menu--vertical {
+  @include tablets {
+    display: block;
+  }
+  
+  color: #fff;
+  text-align: center;
+
+  .menu__list {
+    font-family: "Play", sans-serif;
+    font-size: rem(36px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__item {
+    margin-right: 0;
+  }
+}
