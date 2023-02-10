@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 97%;
   max-width: $containerWidth;
   margin: 0 auto;
 }
@@ -58,6 +58,11 @@ footer {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
 }
 
 a {

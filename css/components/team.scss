@@ -1,0 +1,133 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets 
+}
+
+.team--version-desktop {
+  .team__content {
+    position: absolute;
+    top: 100%;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.team__item {
+  position: relative;
+  max-width: rem(220px);
+  text-align: center;
+  margin-right: 1%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.active {
+    .team__title {
+      &:after {
+        content: "";
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  @include tablets {
+    margin-bottom: rem(16px);
+    margin-right: 0;
+  }
+
+  @include phones {
+    margin-bottom: rem(6px);
+  }
+}
+
+.team__member {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(25px);
+    height: rem(290px);
+
+    @include tablets {
+    margin-bottom: rem(20px)
+    }
+
+    @include phones {
+      
+      height: rem(180px);
+    }
+}
+
+.team__member-img {
+  width: auto;
+  height: 100%;
+}
+
+.team__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  margin-bottom: rem(11px);
+  
+  @include tablets {
+    font-size: rem(21px);
+  }
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: rem(4px);
+    border-left-width: rem(4px);
+    border-top: rem(6px) solid $red;
+    border-bottom: 0;
+    display: block;
+    margin-left: rem(5px);}
+}
+
+.team__content {
+  overflow: hidden;
+  transition: height .3s;
+  height: 0;
+}
+
+.team__content-block {
+  padding-bottom: rem(5px);
+}
+
+.team__profession {
+  margin-bottom: rem(4px);
+
+  @include tablets {
+    font-size: rem(18px);
+    font-weight: 700;
+  }
+}
+
+.team__occupation {
+  line-height: rem(19px);
+  color: #666;
+  padding: 0 20%;
+}
+
+.team--version-mobile {
+  display: none;
+  
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team__item {
+    margin-bottom: rem(10px);
+  }
+}
