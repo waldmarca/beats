@@ -44,8 +44,7 @@ if (isValid) {
     });
 
     request.fail((data) => {
-      const message = data.responseJSON.message;
-      content.text(message);
+      content.text('Не удалось отправить письмо');
       modal.addClass("error-modal");
     });
 
